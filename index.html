@@ -98,7 +98,7 @@ button {
   left: 0;
   top: 0;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 2s ease-in-out;
 }
 
 .slideshow img.active {
@@ -216,10 +216,10 @@ yesBtn.addEventListener("click", () => {
 noBtn.addEventListener("click", () => {
   noClicks++;
 
-  if (noClicks === 1) alert("Are you sure? 🥺");
-  else if (noClicks === 2) alert("Think carefully… 😭");
-  else if (noClicks === 3) alert("Last chance…");
-  else alert("You don’t actually mean that 😏");
+  if (noClicks === 1) alert("You dont mean it, do you? 🥺");
+  else if (noClicks === 2) alert("Naadei really?!🙄 ");
+  else if (noClicks === 3) alert("oh ohemaa, 2 weeks of planning and building this 3ny3 kwa anaa?🥲");
+  else alert("be serious and hit the yes Naa😏🙄");
 
   noSize -= 3;
   noBtn.style.fontSize = noSize + "px";
