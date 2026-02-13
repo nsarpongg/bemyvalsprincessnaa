@@ -32,12 +32,13 @@ h1 {
 }
 
 button {
-  padding: 15px 35px;
-  font-size: 1.2em;
+  padding: 20px 45px;      /* bigger size */
+  font-size: 1.4em;        /* bigger text */
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;     /* slightly rounder */
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 #yesBtn {
@@ -197,7 +198,7 @@ noBtn.onclick = () => {
   else if (noClicks === 3) alert("Oh Ohemaa, weeks of planning and building this 3ny3 kwa anaa? 🥲");
   else alert("Be serious and hit the yes Naa 😏🙄");
 
-  yesSize += 0.2;
+  yesSize += 0.3;
   noSize -= 0.1;
 
   yesBtn.style.transform = `scale(${yesSize})`;
