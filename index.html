@@ -2,41 +2,40 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Will You Be Mine?</title>
+<title>For My Favorite Person ❤️</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-  overflow-x: hidden;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
   text-align: center;
+  overflow-x: hidden;
 }
 
-/* Top Image Section */
-.top-image {
+/* HEADER IMAGE */
+.header-image {
   width: 100%;
   height: 50vh;
   background: url("https://i.ibb.co/dwshqDW4/IMG-7896.jpg") center/cover no-repeat;
 }
 
-/* Question Section */
-.container {
-  padding: 20px;
-}
-
+/* MAIN QUESTION */
 h1 {
-  font-size: 2.8rem;
+  font-size: 2.5em;
   margin-top: 20px;
 }
 
-/* Buttons */
+/* BUTTONS */
+.buttons {
+  margin-top: 20px;
+}
+
 button {
   padding: 15px 35px;
-  font-size: 20px;
-  margin: 15px;
+  font-size: 1.2em;
   border: none;
-  border-radius: 14px;
+  border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -44,29 +43,15 @@ button {
 #yesBtn {
   background: #ff4b5c;
   color: white;
+  margin-right: 10px;
 }
 
 #noBtn {
-  background: #333;
-  color: white;
-  position: relative;
+  background: white;
+  color: #ff4b5c;
 }
 
-/* Floating hearts */
-.heart {
-  position: fixed;
-  font-size: 40px;
-  animation: float 4s linear infinite;
-  color: red;
-  z-index: 0;
-}
-
-@keyframes float {
-  from { transform: translateY(100vh); opacity: 1; }
-  to { transform: translateY(-10vh); opacity: 0; }
-}
-
-/* Love Page */
+/* LOVE PAGE */
 #lovePage {
   display: none;
   padding: 20px;
@@ -74,6 +59,13 @@ button {
   margin: auto;
 }
 
+.love-text {
+  margin-top: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* SLIDESHOW */
 .slideshow {
   width: 320px;
   height: 420px;
@@ -85,36 +77,66 @@ button {
 }
 
 .slideshow img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
   opacity: 0;
-  transition: opacity 3s ease-in-out;
+  animation: fade 30s infinite;
 }
 
-.slideshow img.active {
-  opacity: 1;
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 3s; }
+.slideshow img:nth-child(3) { animation-delay: 6s; }
+.slideshow img:nth-child(4) { animation-delay: 9s; }
+.slideshow img:nth-child(5) { animation-delay: 12s; }
+.slideshow img:nth-child(6) { animation-delay: 15s; }
+.slideshow img:nth-child(7) { animation-delay: 18s; }
+.slideshow img:nth-child(8) { animation-delay: 21s; }
+.slideshow img:nth-child(9) { animation-delay: 24s; }
+.slideshow img:nth-child(10) { animation-delay: 27s; }
+
+@keyframes fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  10% { opacity: 1; }
+  15% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp 4s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div id="questionPage">
-  <div class="top-image"></div>
+<div id="mainPage">
+  <div class="header-image"></div>
 
-  <div class="container">
-    <h1>Will you be my Valentine, Naa? ❤️</h1>
-    <button id="yesBtn">Yes ❤️😍</button>
-    <button id="noBtn">No 💔🙄</button>
+  <h1>Will You Be My Valentine? ❤️</h1>
+
+  <div class="buttons">
+    <button id="yesBtn">Yes 💖</button>
+    <button id="noBtn">No 😢</button>
   </div>
 </div>
 
 <div id="lovePage">
-  <h1>You’ve always been mine ❤️</h1>
+  <h1>You’ve Always Been Mine ❤️</h1>
 
   <div class="slideshow">
     <img src="https://i.ibb.co/VpkFbsfS/IMG-4446.jpg">
@@ -127,105 +149,71 @@ button {
     <img src="https://i.ibb.co/d06wSHf0/IMG-2929.png">
     <img src="https://i.ibb.co/Ps0Dq58C/IMG-1097.png">
     <img src="https://i.ibb.co/WN4p4xJp/IMG-6964.png">
-    <img src="https://i.ibb.co/PZ2kPt7j/IMG-6973.png">
-    <img src="https://i.ibb.co/GfcqCMzj/IMG-7405.png">
   </div>
 
-  <p>
-  Do you ever wonder how the universe connected us?<br><br>
-  I laugh whenever I think about it, but when I really think about it deeply, it makes me realize without any doubt that we were made for each other.<br><br>
-  6–7 years down the line, with constant ups and downs, the way we met always brings me peace. Even though we don’t know what tomorrow holds, one thing I know for sure is that we are meant for each other.<br><br>
-  Keeping in mind your love, your smile, the long day and night calls, your pretty face and yes your cute boobs and ass 😂 keep me going day in and day out.<br><br>
-  Everything about you just feels right. And I can’t wait to see you again, hug you, kiss you, make out together, do all what we’ve been planning on the phone, and tell you how much I love you.<br><br>
-  I’m so lucky to have you ❤️💕
-  </p> 
+  <div class="love-text">
+    <p>
+    Do you ever wonder how the universe connected us?<br><br>
 
-  <iframe 
-    src="https://open.spotify.com/embed/track/7IWJTrZvS11K1ziaS3JvYT?utm_source=generator&autoplay=1"
-    width="300" 
-    height="80"
-    frameborder="0"
+    I laugh whenever I think about it, but when I really think about it deeply, it makes me realize without any doubt that we were made for each other.<br><br>
+
+    6–7 years down the line, with constant ups and downs, but the way we met always brings me peace and hope that we gonna make it. Even though we don’t know what tomorrow holds, one thing I know for sure is that we are meant for each other.<br><br>
+
+    Keeping in mind your love, your smile, the long day and night calls, your pretty face and yes your cute boobs and ass 😂 keep me going day in and day out.<br><br>
+
+    Everything about you just feels right. And I can’t wait to see you again, hug you, kiss you, make out together, do all what we’ve been planning on the phone, and tell you how much I love you.<br><br>
+
+    I’m so lucky to have you 💕
+    </p>
+  </div>
+
+  <!-- Spotify Embed -->
+  <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/5X2J0JXH2sC7NqXxYkIYum?utm_source=generator&autoplay=1"
+    width="100%" height="152" frameBorder="0"
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
   </iframe>
+
 </div>
 
 <script>
-let yesBtn = document.getElementById("yesBtn");
-let noBtn = document.getElementById("noBtn");
-let questionPage = document.getElementById("questionPage");
-let lovePage = document.getElementById("lovePage");
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
 
+let yesSize = 1;
+let noSize = 1;
 let noClicks = 0;
-let yesSize = 30;
-let noSize = 30;
 
-/* Floating hearts */
-function createHeart() {
-  let heart = document.createElement("div");
-  heart.classList.add("heart");
-  heart.innerHTML = "❤️";
-  heart.style.left = Math.random() * 100 + "vw";
-  document.body.appendChild(heart);
-  setTimeout(() => heart.remove(), 4000);
-}
-let heartInterval = setInterval(createHeart, 500);
+yesBtn.onclick = () => {
+  document.getElementById("mainPage").style.display = "none";
+  document.getElementById("lovePage").style.display = "block";
+};
 
-/* Slideshow */
-let slides = document.querySelectorAll(".slideshow img");
-let currentSlide = 0;
-slides[currentSlide].classList.add("active");
-
-setInterval(() => {
-  slides[currentSlide].classList.remove("active");
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].classList.add("active");
-}, 2000);
-
-/* YES CLICK */
-yesBtn.addEventListener("click", () => {
-
-  clearInterval(heartInterval); // stop hearts after yes
-
-  for (let i = 0; i < 120; i++) {
-    let confetti = document.createElement("div");
-    confetti.style.position = "absolute";
-    confetti.style.width = "8px";
-    confetti.style.height = "8px";
-    confetti.style.background = 
-      `hsl(${Math.random()*360},100%,50%)`;
-    confetti.style.top = "50%";
-    confetti.style.left = "50%";
-    confetti.style.transform = 
-      `translate(${Math.random()*600-300}px,${Math.random()*600-300}px)`;
-    document.body.appendChild(confetti);
-    setTimeout(() => confetti.remove(), 1000);
-  }
-
-  setTimeout(() => {
-    questionPage.style.display = "none";
-    lovePage.style.display = "block";
-  }, 800);
-});
-
-/* NO CLICK */
-noBtn.addEventListener("click", () => {
+noBtn.onclick = () => {
   noClicks++;
 
   if (noClicks === 1) alert("You don’t mean it, do you? 🥺");
   else if (noClicks === 2) alert("Naadei really?! 🙄");
-  else if (noClicks === 3) alert("Oh Ohemaa, 2 weeks of planning and building this 3ny3 kwa anaa? 🥲");
+  else if (noClicks === 3) alert("Oh Ohemaa, weeks of planning and building this 3ny3 kwa anaa? 🥲");
   else alert("Be serious and hit the yes Naa 😏🙄");
 
-  noSize -= 3;
-  noBtn.style.fontSize = noSize + "px";
+  yesSize += 0.2;
+  noSize -= 0.1;
 
-  yesSize += 10;
-  yesBtn.style.fontSize = yesSize + "px";
+  yesBtn.style.transform = `scale(${yesSize})`;
+  noBtn.style.transform = `scale(${noSize})`;
+};
 
-  noBtn.style.position = "absolute";
-  noBtn.style.left = Math.random() * 80 + "vw";
-  noBtn.style.top = Math.random() * 80 + "vh";
-});
+/* Floating hearts */
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 4000);
+}, 600);
 </script>
 
 </body>
